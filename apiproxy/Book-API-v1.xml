@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="Book-API-v1">
+    <Basepaths>/book/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1558430308926</CreatedAt>
+    <CreatedBy>kasturi.pathak@appythings.nl</CreatedBy>
+    <Description>Book API v1</Description>
+    <DisplayName>Book-API-v1</DisplayName>
+    <LastModifiedAt>1558552390738</LastModifiedAt>
+    <LastModifiedBy>kasturi.pathak@appythings.nl</LastModifiedBy>
+    <ManifestVersion>SHA-512:7d2273e4371852333910775af4e78d697f68fd6cb345e4b81c049e3f2a52a0119959e52f73eac97bb1507c693132014b8bd1b829c2f9164c11c47607aeea7922</ManifestVersion>
+    <Policies>
+        <Policy>AssignMessage</Policy>
+        <Policy>JSONThreatProtection</Policy>
+        <Policy>JavaScript</Policy>
+        <Policy>ResponseCache</Policy>
+        <Policy>SpikeArrest</Policy>
+        <Policy>VerifyAPIKey</Policy>
+        <Policy>XMLtoJSON</Policy>
+        <Policy>addCors</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://sample.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

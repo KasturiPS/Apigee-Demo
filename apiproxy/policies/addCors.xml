@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="addCors" async="false" continueOnError="false" enabled="true">
+    <DisplayName>addCors</DisplayName>
+    <Properties/>
+    <Add>
+        <Headers>
+            <Header name="Access-Control-Allow-Headers">origin, x-requested-with, accept, Authorization, Content-Type</Header>
+            <Header name="Access-Control-Max-Age">3628800</Header>
+            <Header name="Access-Control-Allow-Methods">GET,OPTIONS,POST,PUT,DELETE</Header>
+        </Headers>
+        <QueryParams/>
+        <FormParams/>
+    </Add>
+    <Set>
+        <Headers>
+            <Header name="Access-Control-Allow-Origin">*</Header>
+        </Headers>
+        <QueryParams/>
+        <FormParams/>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo type="response" createNew="false" transport="http"/>
+</AssignMessage>

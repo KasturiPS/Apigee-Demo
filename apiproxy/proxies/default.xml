@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>SpikeArrest</Name>
+            </Step>
+            <Step>
+                <Name>VerifyAPIKey</Name>
+            </Step>
+            <Step>
+                <Name>JavaScript</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>addCors</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="getBooks">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>ResponseCache</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>XMLtoJSON</Name>
+                </Step>
+                <Step>
+                    <Name>ResponseCache</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/books") and (request.verb = "GET") or 
+            (proxy.pathsuffix MatchesPath "/books/") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="searchBooks">
+            <Description/>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/books/search") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getBookById">
+            <Description/>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/books/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="CreateOrder">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>JSONThreatProtection</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/orders") and (request.verb = "POST")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/book/v1</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

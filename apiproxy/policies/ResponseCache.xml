@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResponseCache async="false" continueOnError="false" enabled="true" name="ResponseCache">
+    <DisplayName>ResponseCache</DisplayName>
+    <Properties/>
+    <CacheKey>
+        <Prefix/>
+        <KeyFragment ref="request.queryparam.apikey" type="string"/>
+        <KeyFragment ref="apiproxy.revision" type="string"/>
+    </CacheKey>
+    <Scope>Exclusive</Scope>
+    <CacheResource>book-api-v1-response-cache</CacheResource>
+    <ExpirySettings>
+        <ExpiryDate/>
+        <TimeOfDay/>
+        <TimeoutInSec ref="">3600</TimeoutInSec>
+    </ExpirySettings>
+    <SkipCacheLookup/>
+    <SkipCachePopulation/>
+</ResponseCache>

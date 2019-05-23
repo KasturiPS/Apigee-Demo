@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AssignMessage" version="SHA-512:56adb10b7ed52f2022cc7e6e1a3e5f52f043f623ac17b8faa172a564753e4693bc94b249bd44b8464dc3ba958b5f867588e4ff4c50bb0669f0a53a5fafdd8ca7"/>
+        <VersionInfo resourceName="JSONThreatProtection" version="SHA-512:a8ec700c3732faccb3d55bd9f20987f6a71effd63b2c4f85f96df9b4283ecc51f3b632d9c2079b7d56ead671b1e4d099caeb5a448448f2d5a6dbf4f81a335c1d"/>
+        <VersionInfo resourceName="JavaScript" version="SHA-512:74d3da4b3d5bb95ffce05c7006546b45f30b86a16b4c7342d53d873283b2b47f8da274bdbc4d16134a391ec6565e4048b40f794652a91a577536e904eda6d6c8"/>
+        <VersionInfo resourceName="ResponseCache" version="SHA-512:2fefe7945cc68896a0c8e3a635a93c307a704617431061ad9eb6560eecfddb8a58e3029d1f7e37269604844393dd79315838301fc7d93b2df85dc33ec1268660"/>
+        <VersionInfo resourceName="SpikeArrest" version="SHA-512:3de3a7075943f5e3f80dade3fe66d1ca4eb5724e0c3cc23347924fad2a15cc3c7a427bd2ba4b35dbfe6e75d6256f7bc6d8f5a3fc388a7ed48a5ec81c5f780727"/>
+        <VersionInfo resourceName="VerifyAPIKey" version="SHA-512:ea5c8f110ac8db5f011f0e82a6eb8e07f5297a6f64d098ad02c39992b352615e0de28eed7f9afb96447da23521a2987399f3a53b87c6c0ff58af02b017d361ca"/>
+        <VersionInfo resourceName="XMLtoJSON" version="SHA-512:c4afdab6df8c8d25541d4c23de219f02ad717e5121a16b277f8b1ffe42ca5659928d219163b7f15d248b31193637b2a2154e315f4e048933721818a33582547e"/>
+        <VersionInfo resourceName="addCors" version="SHA-512:73740e2dd8ee168fa85350e1f5c228f55af84946a35defcea810c070d7035e0b282d8fe977da58960104a8279d02827547a077bed0038c2291e5990328f36e84"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:23f218f432c9ecac9482d31973947213ac5878401407444c579bd81f6036b5a2a2d7b5ad58d9509717a9351920d3df1ca3fc629aad17fe6184c6cdbc4c7c0441"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://sample.js" version="SHA-512:e6f7c341f9aca11ba051c0bbf4ea26dd51455f66f457664af894e607685941bfd5833be10332f2b1b1a4b7c436536a40e281a6e722416f09ed5bab0f4ff7e0b7"/>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:b7ae8e5fbd7abed3db1bace4c163ac0fb0802ada10402d70ddeb13796d225e0c23db8e4136e780e99d590fbf22d5e262f4183561779e20227c51bf2c99a9e7c8"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:4b8d6044c8c8dee760fad6014316192afd100ad7d5544307d17273ec9af25e0a0fa75017c882e1f16e776716a37a1cdaba51a750af20b09ab4d1642085c53163"/>
+    </TargetEndpoints>
+</Manifest>
