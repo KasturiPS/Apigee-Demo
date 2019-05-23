@@ -4,9 +4,6 @@
     <FaultRules/>
     <PreFlow name="PreFlow">
         <Request>
-            <Step>
-                <Name>AssignMessage</Name>
-            </Step>
         </Request>
         <Response/>
     </PreFlow>
